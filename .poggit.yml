@@ -1,6 +1,6 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/SkyDNA/1vs1
 branches:
-- fixing
+- master
 projects:
   1vs1:
     path: ""
