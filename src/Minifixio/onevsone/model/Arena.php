@@ -133,10 +133,10 @@ class Arena{
 		$player->getInventory()->setItemInHand(Item::get(ITEM::IRON_SWORD));
 		
 		// Pur the armor on the player
-		$player->getInventory()->setHelmet(Item::get(302, 0, 1));
-		$player->getInventory()->setChestplate(Item::get(303, 0, 1));
-		$player->getInventory()->setLeggings(Item::get(304, 0, 1));
-		$player->getInventory()->setBoots(Item::get(305, 0, 1));
+		$player->getArmorInventory()->setHelmet(Item::get(302, 0, 1));
+		$player->getArmorInventory()->setChestplate(Item::get(303, 0, 1));
+		$player->getArmorInventory()->setLeggings(Item::get(304, 0, 1));
+		$player->getArmorInventory()->setBoots(Item::get(305, 0, 1));
 		$player->getArmorInventory()->sendContents($player);
 		
 		// Set his life to 20
