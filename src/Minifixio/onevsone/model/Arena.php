@@ -137,7 +137,7 @@ class Arena{
 		$player->getInventory()->setChestplate(Item::get(303, 0, 1));
 		$player->getInventory()->setLeggings(Item::get(304, 0, 1));
 		$player->getInventory()->setBoots(Item::get(305, 0, 1));
-		$player->getInventory()->sendArmorContents($player);
+		$player->getArmorInventory()->sendContents($player);
 		
 		// Set his life to 20
 		$player->setHealth(20);
@@ -184,7 +184,7 @@ class Arena{
    		foreach ($this->players as $player){
    			$player->getInventory()->setItemInHand(new Item(Item::AIR,0,0));
    			$player->getInventory()->clearAll();
-   			$player->getInventory()->sendArmorContents($player);
+   			$player->getArmorInventory()->sendContents($player);
    			$player->getInventory()->sendContents($player);
    			$player->getInventory()->sendHeldItem($player);
    		}
