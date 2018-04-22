@@ -50,10 +50,10 @@ class OneVsOne extends PluginBase{
     		);
     	
     	// Register commands
-    	$joinCommand = new Minifixio\onevsone\command\JoinCommand($this, $this->arenaManager);
+    	$joinCommand = new \Minifixio\onevsone\command\JoinCommand($this, $this->arenaManager);
     	$this->getServer()->getCommandMap()->register($joinCommand->commandName, $joinCommand);
     	
-    	$referenceArenaCommand = new Minifixio\onevsone\command\ReferenceArenaCommand($this, $this->arenaManager);
+    	$referenceArenaCommand = new \Minifixio\onevsone\command\ReferenceArenaCommand($this, $this->arenaManager);
     	$this->getServer()->getCommandMap()->register($referenceArenaCommand->commandName, $referenceArenaCommand);    	
     }
     
